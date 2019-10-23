@@ -1,6 +1,6 @@
-# data-structures-and-algorithms-pcc-cs301
-
 [![HitCount](http://hits.dwyl.io/debdutgoswami/data-structures-and-algorithms-pcc-cs301.svg)](http://hits.dwyl.io/debdutgoswami/data-structures-and-algorithms-pcc-cs301)
+
+# Data Structures and Algorithms (PCC-CS301)
 
 This repository is based on Data Structures and Algorithms. All the codes in this repo is a part of MAKAUT 3rd Semester syllabus. Hope this repo helps. I constantly keep adding new codes to the repo. Moreover, if anyone of you want to contribute to this repo, then feel free to contact me and if you think there is any error in the codes then feel free to raise an issue.
 
