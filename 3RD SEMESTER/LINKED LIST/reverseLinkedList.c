@@ -2,13 +2,13 @@
 #include<stdlib.h>
 struct node{
 	int data;
-	struct node *next;
+	struct node *link;
 }*start=NULL;
 struct node* create(int d){
 	struct node *n;
 	n=(struct node*)malloc(sizeof(struct node));
 	n->data=d;
-	n->next=NULL;
+	n->link=NULL;
 	return n;
 }
 void insert(struct node *n){
@@ -16,9 +16,9 @@ void insert(struct node *n){
 	if(start==NULL)
 		start=n;
 	else{
-		while(ptr->next!=NULL)
-			ptr=ptr->next;
-		ptr->next=n;
+		while(ptr->link!=NULL)
+			ptr=ptr->link;
+		ptr->link=n;
 	}
 }
 void show(){
@@ -27,20 +27,21 @@ void show(){
 	else{
 		struct node *ptr;
 		printf("The list is ");
-		for(ptr=start;ptr!=NULL;ptr=ptr->next)
+		for(ptr=start;ptr!=NULL;ptr=ptr->link)
 			printf("%d ",ptr->data);
 		printf("\n");
 	}
 }
 void rev(){
-	struct node *ptr=start,*prev=NULL,*tmp=NULL;
-	if(start==NULL)
-		printf("Underflow\n");
-	else{
-		for(ptr=start,tmp=ptr->next,ptr->next=prev;ptr!=NULL;prev=ptr,ptr=tmp);
-		start=prev;
-		printf("The list is reversed\n");
+	struct node *ptr=start,*prev=NULL,*next=NULL;
+	while(ptr){
+		next = ptr->link;
+		
+		ptr->link = prev;
+		prev = ptr;
+		ptr = next;
 	}
+	start = prev;
 }
 int main(void){
 	int n,d,pos;
