@@ -1,3 +1,4 @@
+//Starting
 #include<stdio.h>
 #include<stdlib.h>
 struct bst
@@ -94,7 +95,6 @@ struct bst * del(struct bst *p,int val)
 /* this code is for deleting node having both children */
   if( x->left!=NULL && x->right!=NULL)
      {
-
        if(y->left==x)
        {
          temp=x->left;
@@ -153,8 +153,7 @@ struct bst * del(struct bst *p,int val)
         }
     }
 }
-	                 
-                                     
+	                                              
    int main()
      {
          struct bst *root;
@@ -179,7 +178,7 @@ struct bst * del(struct bst *p,int val)
      
      }   
      
-       
+  //Example     
   Output:
   
  enter no. of term:- 5
