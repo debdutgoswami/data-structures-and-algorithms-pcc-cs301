@@ -1,3 +1,4 @@
+//Starting
 #include<stdio.h>
 #include<conio.h>
 #include<stdlib.h>
@@ -153,7 +154,7 @@ void display()
 		}
 }
 
-
+//Example
 Output
 		
 ************************* MENU ************************
